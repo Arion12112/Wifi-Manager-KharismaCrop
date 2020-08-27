@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url("./bg-white-2.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .center {
+            margin-right: auto;
+            margin-left: auto;
+            align-self: center;
+        }
+
+        .flex {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            margin-top: 2rem;
+            max-width: 40rem;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            /* border: 1px solid #e3e6f0; */
+            /* border-radius: 0.35rem; */
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            /* padding: 12px; */
+            width: 100%;
+            margin-bottom: 0;
+            background-color: #6bb51d;
+            border-bottom: 1px solid #e3e6f0;
+        }
+
+        .button {
+            outline: none;
+            padding: 10px;
+            margin-top: 0.75rem;
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            align-items: center;
+            background-color: #6bb51d;
+            background-clip: border-box;
+            border: none;
+            border-radius: 0.35rem;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .button-scan {
+            outline: none;
+            padding: 10px;
+            margin-top: 0.75rem;
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            align-items: center;
+            background-color: #10a0cc;
+            background-clip: border-box;
+            border: none;
+            border-radius: 0.35rem;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .button-scan:hover{
+            cursor: pointer;
+            opacity: 70%;
+        }
+
+        .button:hover {
+            opacity: 70%;
+        }
+
+        .container-header {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            /* Add some padding inside the card container */
+            align-content: center;
+            padding: 12px 16px;
+        }
+
+        img {
+            max-width: 55%;
+            align-self: center;
+            /* height: 30rem; */
+        }
+
+        .input {
+            outline: 1px #34eb40;
+            margin-top: 0.75rem;
+            width: 100%;
+            font-size: 25px;
+            align-items: center;
+            border-radius: 0.35rem;
+            border-color: #478f4c;
+        }
+
+        input:hover {
+            cursor: pointer;
+        }
+
+        .no-network {
+            align-items: center;
+            color: #478f4c;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .network {
+            align-items: center;
+            color: #478f4c;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        .q {
+            float: right;
+            width: 4em;
+            text-align: right;
+        }
+
+        .l {
+
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAALVBMVEX///8EBwfBwsLw8PAzNjaCg4NTVVUjJiZDRUUUFxdiZGSho6OSk5Pg4eFydHTCjaf3AAAAZElEQVQ4je2NSw7AIAhEBamKn97/uMXEGBvozkWb9C2Zx4xzWykBhFAeYp9gkLyZE0zIMno9n4g19hmdY39scwqVkOXaxph0ZCXQcqxSpgQpONa59wkRDOL93eAXvimwlbPbwwVAegLS1HGfZAAAAABJRU5ErkJggg==") no-repeat left center;
+            background-size: 1em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card center flex">
+        <div class="card-header center flex">
+            <div class="container-header center flex">
+                <img src="logo-panjang-2.png">
+            </div>
+        </div>
+        <div class="container">
+            <div class="no-network center flex">
+                Jaringan tidak ditemukan. Lacak kembali lagi.
+            </div>
+            <div class="network">
+                <h2 style="text-align: center;">Jaringan yang ditemukan</h2>
+                <div><a href='#'>Babarafi</a>
+                    <span class="q l">10%</span>
+                </div>
+                <div><a href='#'>PMisa</a>
+                    <span class="q l">100%</span>
+                </div>
+            </div>
+            <form>
+                <input class="input" name="ssid" id="ssid" placeholder="SSID">
+                <input class="input" name="password" id="password" placeholder="Password">
+                <button type="submit" class="button">Hubungkan</button>
+            </form>
+            <button class="button-scan" onclick="location.href='config.html'">Lacak</button>
+            <button class="button-scan" style="background-color: #47c9a7;" onclick="location.href='index.html'">Kembali</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
